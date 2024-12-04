@@ -1,0 +1,11 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    margin-top: 0; /* Zajistí, že se menu zobrazí hned u ikony */
+  }
+  /* Stylování ikonky */
+  .dropdown img {
+    width: 24px; /* Nastav velikost ikonky */
+    height: 24px;
+  }
