@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+  font-family:"Chakra Petch", sans-serif;
+}
+
 .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  .dropdown-menu {
-    margin-top: 0; /* Zajistí, že se menu zobrazí hned u ikony */
-  }
-  /* Stylování ikonky */
-  .dropdown img {
-    width: 24px; /* Nastav velikost ikonky */
-    height: 24px;
-  }
+  display: block;
+}
+
+nav{background-color: #1A1A1D;}
