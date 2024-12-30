@@ -1,0 +1,8 @@
+.custom-carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.5;
+}
+.custom-carousel-item.active {
+    transform: scale(1.2);
+    opacity: 1;
+}
