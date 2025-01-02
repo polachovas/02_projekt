@@ -12,12 +12,12 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md d-none d-md-block bg-body-tertiary">
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="" width="30" height="24">
         </a>
-        <form class="d-flex" role="search">
+        <form class="d-flex d-none d-md-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
@@ -67,8 +67,7 @@
   <section class="shop">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-
+        <div class="col-md-3 d-none d-md-block">
           <div id="cudliky">
             <h2>Řazení</h2>
             <div class="my-2">
@@ -101,7 +100,7 @@
                   <span>1000 Kč</span>
                 </div>
               </div>
-              <p>Vybrané rozmezí: <span id="selectedRange">0 Kč - 1000 Kč</span></p>
+              <p><span id="selectedRange">Od 0 Kč do 1000 Kč</span></p>
             </div>
           </form>
 
@@ -184,7 +183,7 @@
                 Default radio
               </label>
             </div>
-            
+
             <h3>Ostatní</h3>
             <select class="form-select" aria-label="Default select example">
               <option selected>Různé</option>
@@ -194,10 +193,11 @@
             </select>
           </div>
         </div>
+
         <div class="col-md-9">
           <h3>Herní svět</h3>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr6.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -209,7 +209,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr1.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -221,7 +221,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr2.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -233,9 +233,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr6.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -247,7 +245,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr1.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -259,7 +257,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr2.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -271,9 +269,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr6.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -285,7 +281,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr1.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -297,7 +293,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr2.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -309,9 +305,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr6.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -323,7 +317,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr1.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -335,7 +329,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr2.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -347,9 +341,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr6.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -361,7 +353,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr1.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -373,7 +365,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
                 <img src="images/obr2.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -414,7 +406,7 @@
     const selectedRange = document.getElementById('selectedRange');
 
     function updatePriceRange(value) {
-      selectedRange.textContent = `0 Kč - ${value} Kč`;
+      selectedRange.textContent = `Od 0 Kč do ${value} Kč`;
     }
 
     document.getElementById('priceRange').addEventListener('input', (event) => {
