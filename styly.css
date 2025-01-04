@@ -1,12 +1,3 @@
-.custom-carousel-item {
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    opacity: 0.5;
-}
-.custom-carousel-item.active {
-    transform: scale(1.2);
-    opacity: 1;
-}
-
 footer {
     background-color: #080808;
     padding-top: 0.1%;
@@ -30,4 +21,72 @@ footer h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.novinky {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.custom-carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 250px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.custom-carousel-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.custom-carousel-item {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 200px;
+    background: #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform-origin: center;
+    position: absolute;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.custom-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.custom-carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.custom-carousel-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.custom-carousel-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
