@@ -86,5 +86,8 @@ footer h4 {
 .novinky h2{font-size: 2.5rem;}
 
 nav{background-color: #1a1a1a;}
+  
+.btn-secondary{width: 200px;}
 
-
+#karta img{height: 270px;
+            }
