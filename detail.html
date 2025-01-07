@@ -1,22 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styly.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" rel="stylesheet">
     <title>Counter-Strike 2</title>
 </head>
-<body>
+
+<body class="bg-dark text-light">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md text-light p-0">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" width="100" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" data-bs-theme="dark">
+                    <div class="btn-group dropend d-md-none d-sm-block">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="images/white-shopping-cart-icon-png-19.jpg" alt="Dropdown Icon" class="img-fluid"
+                                style="max-width: 30px;">
+                        </button>
+                        <ul class="dropdown-menu" style="width: 280px;">
+                            <li>
+                                <div class="d-flex align-items-center my-2">
+                                    <img src="images/cs2.jpg" width="35" height="60" class="mx-2">
+                                    <div>
+                                        <p class="mb-0">Counter-Strike 2</p>
+                                        <p class="mb-0"><span class="text-primary">Free</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center my-2">
+                                    <img src="images/Helldivers2cover.png" width="35" height="60" class="mx-2">
+                                    <div>
+                                        <p class="mb-0">HELLDIVERS™ 2</p>
+                                        <p class="mb-0"><span class="text-primary">39,99€</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-sm-block d-md-none d-flex flex-column">
+                        <div id="cudliky1">
+                            <h2>Řazení</h2>
+                            <div class="d-flex flex-column align-items-center my-2">
+                                <input type="radio" class="btn-check" name="options1" id="option1-1" autocomplete="off"
+                                    checked>
+                                <label class="btn btn-secondary" for="option1-1">Nejprodávanější</label>
+                            </div>
+                            <div class="d-flex flex-column align-items-center my-2">
+                                <input type="radio" class="btn-check" name="options1" id="option1-2" autocomplete="off">
+                                <label class="btn btn-secondary" for="option1-2">Nejlépe hodnocené</label>
+                            </div>
+                            <div class="d-flex flex-column align-items-center my-2">
+                                <input type="radio" class="btn-check" name="options1" id="option1-3" autocomplete="off">
+                                <label class="btn btn-secondary" for="option1-3">Nejlevnější</label>
+                            </div>
+                            <div class="d-flex flex-column align-items-center my-2">
+                                <input type="radio" class="btn-check" name="options1" id="option1-4" autocomplete="off">
+                                <label class="btn btn-secondary" for="option1-4">Nejdražší</label>
+                            </div>
+                        </div>
+
+                        <h2 class="my-2">Filtrovat podle ceny</h2>
+                        <form>
+                            <div class="mt-2">
+                                <div class="mb-3">
+                                    <label for="priceRange2" class="form-label">Cenové rozmezí 2:</label>
+                                    <input type="range" class="form-range" id="priceRange2" min="0" max="100" step="5"
+                                        oninput="updatePriceRange2(this.value)">
+                                    <div class="d-flex justify-content-between">
+                                        <span>0 €</span>
+                                        <span>100 €</span>
+                                    </div>
+                                </div>
+                                <p><span id="selectedRange2">Od 0 € do 100 €</span></p>
+                            </div>
+                        </form>
+
+                        <h2 class="my-4">Filtrovat podle: </h2>
+                        <div id="dalsi_cudliky">
+                            <h3>Žánr</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+
+                            <h3 class="mt-4">Témata</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                            </div>
+
+                            <h3 class="mt-4">Počet hráčů</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Default radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Default radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Default radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Default radio
+                                </label>
+                            </div>
+
+                            <h3 class="mt-4">Ostatní</h3>
+                            <select class="form-select mb-4" aria-label="Default select example">
+                                <option selected>Různé</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <form class="d-flex d-none d-md-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Co si dnes zahrajem?"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Hledat</button>
+                    </form>
+                    <div class="btn-group dropend d-none d-md-block">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="images/white-shopping-cart-icon-png-19.jpg" alt="Dropdown Icon" class="img-fluid"
+                                style="max-width: 30px;">
+                        </button>
+                        <ul class="dropdown-menu" style="width: 280px;">
+                            <li>
+                                <div class="d-flex align-items-center my-2">
+                                    <img src="images/cs2.jpg" width="35" height="60" class="mx-2">
+                                    <div>
+                                        <p class="mb-0">Counter-Strike 2</p>
+                                        <p class="mb-0"><span class="text-primary">Free</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center my-2">
+                                    <img src="images/Helldivers2cover.png" width="35" height="60" class="mx-2">
+                                    <div>
+                                        <p class="mb-0">HELLDIVERS™ 2</p>
+                                        <p class="mb-0"><span class="text-primary">39,99€</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="detail">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <img src="images/cs2.jpg">
+                </div>
+                <div class="col-md-6">
+                    <h1>Counter-Strike 2</h1>
+                    <p>Už více než dvě dekády nabízí série her Counter-Strike jedinečný kompetitivní zážitek, na jehož
+                        evoluci se podílí miliony hráčů z celého světa. A tohle je začátek další kapitoly – tohle je
+                        Counter-Strike 2.</p>
+                    <p>Tento bezplatný upgrade hry CS:GO byl od základu vystavěn na enginu Source 2, díky kterému
+                        přináší realistické vykreslování s fyzikálními základy, prvotřídní online funkce nebo třeba
+                        vylepšené nástroje pro komunitní tvůrce. Shrnuto a podtrženo, připravte se na největší
+                        technologický skok v historii populární série!</p>
+                    <p>Kromě klasické týmové akční hratelnosti známé od roku 1999 Counter-Strike 2 také zahrnuje:
+                        <li>aktualizovaný mód Premier a zbrusu nový rating CS,</li>
+                        <li>globální a regionální žebříčky,</li>
+                        <li>vylepšené a přepracované mapy,</li>
+                        <li>dynamické dýmovnice prohlubující taktické možnosti,</li>
+                        <li>systém obnovování informací nezávislý na tickratu,</li>
+                        <li>modernizované vizuální efekty a zvuky,</li>
+                        <li>všechny Vaše předměty ze hry CS:GO.</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container py-5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-3">
+              
+              <div class="col gallery-item">
+                  <a href="images/csg1.jpg" data-fancybox="gallery" data-caption="Obrázek 1">
+                      <img src="images/csg1.jpg" alt="Obrázek 1">
+                  </a>
+              </div>
+             
+              <div class="col gallery-item">
+                  <a href="images/csg2.jpg" data-fancybox="gallery" data-caption="Obrázek 2">
+                      <img src="images/csg2.jpg" alt="Obrázek 2">
+                  </a>
+              </div>
+             
+              <div class="col gallery-item">
+                  <a href="images/csg3.jpg" data-fancybox="gallery" data-caption="Obrázek 3">
+                      <img src="images/csg3.jpg" alt="Obrázek 3">
+                  </a>
+              </div>
+             
+              <div class="col gallery-item">
+                  <a href="images/csg4.jpg" data-fancybox="gallery" data-caption="Obrázek 4">
+                      <img src="images/csg4.jpg" alt="Obrázek 4">
+                  </a>
+              </div>
     
+              <div class="col gallery-item">
+                <a href="images/csg5.jpg" data-fancybox="gallery" data-caption="Obrázek 6">
+                    <img src="images/csg5.jpg" alt="Obrázek 5">
+                </a>
+            </div>
+        </div>
+      </section>
+
+      <footer class="pt-5">
+        <h3>Projekt 2 - 2.G - 2024</h3>
+        <div class="texty">
+          <article>
+            <h4>Simona Poláchová</h4>
+            <p>polach.si23@zaci.spse.cz</p>
+            <p>SPŠE a VOŠ Pardubice</p>
+          </article>
+          <article class="zdroje">
+            <h4>Zdroje</h4>
+            <a href="https://store.steampowered.com/explore/new/">
+              <p>Steam</p>
+            </a>
+            <a href="">
+              <p>Volne</p>
+            </a>
+          </article>
+        </div>
+      </footer>
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+      <script>
+        // Inicializace Fancybox pro galerii
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            Thumbs: {
+                autoStart: true,  // Povolit miniatury pro náhledy obrázků
+            },
+            Toolbar: {
+                display: ['counter', 'close'],  // Zobrazit čítač a tlačítko pro zavření
+            }
+        });
+    </script>
 </body>
+
 </html>

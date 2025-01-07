@@ -1,5 +1,5 @@
 footer {
-    background-color: #080808;
+    background-color: #1a1a1a;
     padding-top: 0.1%;
     color: white;
     display: flex;
@@ -44,7 +44,7 @@ footer h4 {
 .custom-carousel-item {
     flex: 0 0 auto;
     width: 240px;
-    height: 320px; 
+    height: 320px;
     background: #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -54,9 +54,9 @@ footer h4 {
 }
 
 .custom-carousel-item img {
-    width: 240px; 
-    height: 320px; 
-    object-fit: cover;   
+    width: 240px;
+    height: 320px;
+    object-fit: cover;
 }
 
 .custom-carousel-buttons {
@@ -83,11 +83,28 @@ footer h4 {
     height: 100%;
 }
 
-.novinky h2{font-size: 2.5rem;}
+.novinky h2 {
+    font-size: 2.5rem;
+}
 
-nav{background-color: #1a1a1a;}
-  
-.btn-secondary{width: 200px;}
+nav {
+    background-color: #1a1a1a;
+}
 
-#karta img{height: 270px;
-            }
+.btn-secondary {
+    width: 200px;
+}
+
+#karta img {
+    height: 270px;
+}
+
+.gallery-item img {
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+}
+
+.gallery-item {
+    margin-bottom: 15px;
+}
