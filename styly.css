@@ -1,3 +1,31 @@
+.chakra-petch-regular {
+    font-family: "Chakra Petch", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .audiowide-regular {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+p{font-family: "Chakra Petch", serif;
+}
+
+label{font-family: "Chakra Petch", serif;
+  }
+
+h1{ font-family: "Audiowide", serif;}
+
+h2{  font-family: "Audiowide", serif;
+}
+
+h3{ font-family: "Audiowide", serif;}
+
+li{font-family: "Chakra Petch", serif;
+}
+
 footer {
     background-color: #1a1a1a;
     padding-top: 0.1%;
@@ -86,6 +114,10 @@ footer h4 {
 .novinky h2 {
     font-size: 2.5rem;
 }
+
+.novinky{background-color: #1a1a1a;}
+
+header{background-color: #1a1a1a;}
 
 nav {
     background-color: #1a1a1a;
