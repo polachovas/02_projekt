@@ -140,3 +140,14 @@ nav {
 .gallery-item {
     margin-bottom: 15px;
 }
+
+#kosik_button{
+    background-color: #1a1a1a;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kosik_button a{text-decoration: none;
+                }

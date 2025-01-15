@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +11,21 @@
     <title>Nákupní košík</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-dark navbar-expand-md text-light p-0">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" width="100" height="50">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" data-bs-theme="dark">
-                <div class="dropdown d-md-none d-sm-block">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <nav class="navbar navbar-dark navbar-expand-md text-light p-0 sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" width="100" height="50">
+        </a>
+            <div class="dropstart">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <img src="images/white-shopping-cart-icon-png-19.jpg" alt="Dropdown Icon" class="img-fluid"
-                      style="max-width: 30px;">
-                  </button>
-                  <ul class="dropdown-menu" style="width: 280px;">
+                        style="max-width: 30px;">
+                </button>
+                <ul class="dropdown-menu p-4" style="width: 280px;">
+                    <h3>Váš košík</h3>
+                    <p>Máte 2 produkty v košíku</p>
+                  <hr class="my-2">
                     <li>
                       <div class="d-flex align-items-center my-2">
                         <img src="images/cs2.jpg" width="35" height="60" class="mx-2">
@@ -37,6 +35,7 @@
                         </div>
                       </div>
                     </li>
+                    <hr class="my-2">
                     <li>
                       <div class="d-flex align-items-center my-2">
                         <img src="images/Helldivers2cover.png" width="35" height="60" class="mx-2">
@@ -46,42 +45,15 @@
                         </div>
                       </div>
                     </li>
-                    <li>
-                      <a class="mx-2" href="kosik.html">Pokračovat do košíku -> </a>
+                    <hr class="my-2">
+                    <li id="kosik_button" class="mt-4">
+                      <a class="text-light" href="kosik.html">Pokračovat do košíku -></a>
                     </li>
                   </ul>
-                </div>
-    
-                <div class="dropstart d-none d-md-block ms-auto">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="images/white-shopping-cart-icon-png-19.jpg" alt="Dropdown Icon" class="img-fluid"
-                      style="max-width: 30px;">
-                  </button>
-                  <ul class="dropdown-menu" style="width: 280px;">
-                    <li>
-                      <div class="d-flex align-items-center my-2">
-                        <img src="images/cs2.jpg" width="35" height="60" class="mx-2">
-                        <div>
-                          <p class="mb-0">Counter-Strike 2</p>
-                          <p class="mb-0"><span class="text-primary">Free</span></p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex align-items-center my-2">
-                        <img src="images/Helldivers2cover.png" width="35" height="60" class="mx-2">
-                        <div>
-                          <p class="mb-0">HELLDIVERS™ 2</p>
-                          <p class="mb-0"><span class="text-primary">39,99€</span></p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
-          </nav>
-    </header>
+        </div>
+    </div>
+</nav>
 
     <section class="bg-dark text-light">
         <div class="container">
