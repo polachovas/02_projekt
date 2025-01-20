@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="styly.css" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
   <title>Cyber</title>
 </head>
 
@@ -16,7 +16,7 @@
   <nav class="navbar navbar-dark navbar-expand-md text-light p-0 sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" width="100" height="50">
+        <img src="images/logo.png" width="100" height="50" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,11 +30,11 @@
           </button>
           <ul class="dropdown-menu p-4" style="width: 280px;">
             <h3>Váš košík</h3>
-            <p>Máte 2 produkty v košíku</p>
-          <hr class="my-2">
+            <p>Máte 3 produkty v košíku</p>
+            <hr class="my-2">
             <li>
               <div class="d-flex align-items-center my-2">
-                <img src="images/cs2.jpg" width="35" height="60" class="mx-2">
+                <img src="images/cs2.jpg" width="35" height="60" class="mx-2" alt="cs2">
                 <div>
                   <p class="mb-0">Counter-Strike 2</p>
                   <p class="mb-0"><span class="text-primary">Free</span></p>
@@ -44,10 +44,20 @@
             <hr class="my-2">
             <li>
               <div class="d-flex align-items-center my-2">
-                <img src="images/Helldivers2cover.png" width="35" height="60" class="mx-2">
+                <img src="images/Helldivers2cover.png" width="35" height="60" class="mx-2" alt="hd">
                 <div>
                   <p class="mb-0">HELLDIVERS™ 2</p>
                   <p class="mb-0"><span class="text-primary">39,99€</span></p>
+                </div>
+              </div>
+            </li>
+            <hr class="my-2">
+            <li>
+              <div class="d-flex align-items-center my-2">
+                <img src="images/Phasmophobia.webp" width="35" height="60" class="mx-2" alt="phasma">
+                <div>
+                  <p class="mb-0">Phasmophobia</p>
+                  <p class="mb-0"><span class="text-primary">19,50€</span></p>
                 </div>
               </div>
             </li>
@@ -62,19 +72,19 @@
           <div id="cudliky1">
             <h2>Řazení</h2>
             <div class="d-flex flex-column align-items-center my-2">
-              <input type="radio" class="btn-check" name="options1" id="option1-1" autocomplete="off" checked>
+              <input type="radio" class="btn-check" name="options1" id="option1-1" checked>
               <label class="btn btn-secondary" for="option1-1">Nejprodávanější</label>
             </div>
             <div class="d-flex flex-column align-items-center my-2">
-              <input type="radio" class="btn-check" name="options1" id="option1-2" autocomplete="off">
+              <input type="radio" class="btn-check" name="options1" id="option1-2">
               <label class="btn btn-secondary" for="option1-2">Nejlépe hodnocené</label>
             </div>
             <div class="d-flex flex-column align-items-center my-2">
-              <input type="radio" class="btn-check" name="options1" id="option1-3" autocomplete="off">
+              <input type="radio" class="btn-check" name="options1" id="option1-3">
               <label class="btn btn-secondary" for="option1-3">Nejlevnější</label>
             </div>
             <div class="d-flex flex-column align-items-center my-2">
-              <input type="radio" class="btn-check" name="options1" id="option1-4" autocomplete="off">
+              <input type="radio" class="btn-check" name="options1" id="option1-4">
               <label class="btn btn-secondary" for="option1-4">Nejdražší</label>
             </div>
           </div>
@@ -96,56 +106,56 @@
           </form>
 
           <h2 class="my-4">Filtrovat podle: </h2>
-          <div id="dalsi_cudliky">
+          <div id="dalsi_cudliky1">
             <h3>Žánr</h3>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">Akční</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
               <label class="form-check-label" for="flexCheckDefault">Bojové</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
               <label class="form-check-label" for="flexCheckDefault">Mlátičky</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
               <label class="form-check-label" for="flexCheckDefault">Střílečky</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
               <label class="form-check-label" for="flexCheckDefault">Logické</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
               <label class="form-check-label" for="flexCheckDefault">RPG</label>
             </div>
 
             <h3 class="mt-4">Témata</h3>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
               <label class="form-check-label" for="flexCheckDefault">Anime</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
               <label class="form-check-label" for="flexCheckDefault">Hororové</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
               <label class="form-check-label" for="flexCheckDefault">Detektivní</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
               <label class="form-check-label" for="flexCheckDefault">Survivalové</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
               <label class="form-check-label" for="flexCheckDefault">Vesmírné</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
               <label class="form-check-label" for="flexCheckDefault">Openworld</label>
             </div>
 
@@ -157,19 +167,19 @@
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
               <label class="form-check-label" for="flexRadioDefault1">
                 Multiplayer
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
               <label class="form-check-label" for="flexRadioDefault1">
                 Singleplayer
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
               <label class="form-check-label" for="flexRadioDefault1">
                 Party a lokální
               </label>
@@ -196,11 +206,11 @@
           </button>
           <ul class="dropdown-menu p-4" style="width: 280px;">
             <h3>Váš košík</h3>
-            <p>Máte 2 produkty v košíku</p>
-          <hr class="my-2">
+            <p>Máte 3 produkty v košíku</p>
+            <hr class="my-2">
             <li>
               <div class="d-flex align-items-center my-2">
-                <img src="images/cs2.jpg" width="35" height="60" class="mx-2">
+                <img src="images/cs2.jpg" width="35" height="60" class="mx-2" alt="cs">
                 <div>
                   <p class="mb-0">Counter-Strike 2</p>
                   <p class="mb-0"><span class="text-primary">Free</span></p>
@@ -210,7 +220,7 @@
             <hr class="my-2">
             <li>
               <div class="d-flex align-items-center my-2">
-                <img src="images/Helldivers2cover.png" width="35" height="60" class="mx-2">
+                <img src="images/Helldivers2cover.png" width="35" height="60" class="mx-2" alt="hd">
                 <div>
                   <p class="mb-0">HELLDIVERS™ 2</p>
                   <p class="mb-0"><span class="text-primary">39,99€</span></p>
@@ -218,7 +228,17 @@
               </div>
             </li>
             <hr class="my-2">
-            <li id="kosik_button" class="mt-4">
+            <li>
+              <div class="d-flex align-items-center my-2">
+                <img src="images/Phasmophobia.webp" width="35" height="60" class="mx-2" alt="phasma">
+                <div>
+                  <p class="mb-0">Phasmophobia</p>
+                  <p class="mb-0"><span class="text-primary">19,50€</span></p>
+                </div>
+              </div>
+            </li>
+            <hr class="my-2">
+            <li id="kosik_button2" class="mt-4">
               <a class="text-light" href="kosik.html">Pokračovat do košíku -></a>
             </li>
           </ul>
@@ -336,23 +356,23 @@
     <div class="container">
       <div class="row my-4">
         <div class="col-md-3 d-none d-md-block">
-          <div id="cudliky">
+          <div id="cudliky2">
             <div class="mb-4">
               <h2>Řazení</h2>
               <div class="my-2">
-                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                <input type="radio" class="btn-check" name="options" id="option1" checked>
                 <label class="btn btn-secondary" for="option1">Nejprodávanější</label>
               </div>
               <div class="my-2">
-                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                <input type="radio" class="btn-check" name="options" id="option2">
                 <label class="btn btn-secondary" for="option2">Nejlépe hodnocené</label>
               </div>
               <div class="my-2">
-                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                <input type="radio" class="btn-check" name="options" id="option3">
                 <label class="btn btn-secondary" for="option3">Nejlevnější</label>
               </div>
               <div class="my-2">
-                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                <input type="radio" class="btn-check" name="options" id="option4">
                 <label class="btn btn-secondary" for="option4">Nejdražší</label>
               </div>
             </div>
@@ -378,30 +398,30 @@
 
           <div class="my-4">
             <h2 class="my-4">Filtrovat podle: </h2>
-            <div id="dalsi_cudliky">
+            <div id="dalsi_cudliky2">
               <h3>Žánr</h3>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
                 <label class="form-check-label" for="flexCheckDefault">Akční</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14">
                 <label class="form-check-label" for="flexCheckDefault">Bojové</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault15">
                 <label class="form-check-label" for="flexCheckDefault">Mlátičky</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault16">
                 <label class="form-check-label" for="flexCheckDefault">Střílečky</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault17">
                 <label class="form-check-label" for="flexCheckDefault">Logické</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault18">
                 <label class="form-check-label" for="flexCheckDefault">RPG</label>
               </div>
             </div>
@@ -410,27 +430,27 @@
           <div class="my-4">
             <h3>Témata</h3>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault19">
               <label class="form-check-label" for="flexCheckDefault">Anime</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault20">
               <label class="form-check-label" for="flexCheckDefault">Hororové</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault21">
               <label class="form-check-label" for="flexCheckDefault">Detektivní</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault22">
               <label class="form-check-label" for="flexCheckDefault">Survivalové</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault23">
               <label class="form-check-label" for="flexCheckDefault">Vesmírné</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault24">
               <label class="form-check-label" for="flexCheckDefault">Openworld</label>
             </div>
           </div>
@@ -438,25 +458,25 @@
           <div class="my-4">
             <h3>Počet hráčů</h3>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
               <label class="form-check-label" for="flexRadioDefault1">
                 Kooperativní
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
               <label class="form-check-label" for="flexRadioDefault1">
                 Singleplayer
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
               <label class="form-check-label" for="flexRadioDefault1">
                 Multiplayer
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
               <label class="form-check-label" for="flexRadioDefault1">
                 Party a lokální
               </label>
@@ -478,7 +498,7 @@
           <h1 class="mb-3 ms-4">Herní svět</h1>
           <div class="row mx-4">
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta1">
                 <img src="images/cs2.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Counter-Strike 2</p>
@@ -496,13 +516,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta2">
                 <img src="images/Kingdom_Come_Deliverance_II.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Kingdom Come: Deliverance II</p>
                   <p class="card-text d-none d-lg-block">Kingdom Come: Deliverance II je historická RPG, která pokračuje
                     v příběhu středověkého dobrodruha v realistickém otevřeném světě.</p>
-                    <p class="text-secondary">RPG</p>
+                  <p class="text-secondary">RPG</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">59,99€</p>
@@ -514,13 +534,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta3">
                 <img src="images/Path_of_Exile_2_cover_art.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Path of Exile 2</p>
                   <p class="card-text d-none d-lg-block">Path of Exile 2 je akční RPG, které rozšiřuje příběh a herní
                     mechaniky původní hry s novými postavami, dovednostmi a světovými lokacemi.</p>
-                    <p class="text-secondary">RPG</p>
+                  <p class="text-secondary">RPG</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">27,75€</p>
@@ -532,13 +552,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta4">
                 <img src="images/Grand_Theft_Auto_V.png" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Grand Theft Auto V</p>
                   <p class="card-text d-none d-lg-block">Grand Theft Auto V je akční adventura, která nabízí otevřený
                     svět plný misí, krádeží a interaktivních aktivit v městě Los Santos.</p>
-                    <p class="text-secondary">Akční</p>
+                  <p class="text-secondary">Akční</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">14,80€</p>
@@ -550,13 +570,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta5">
                 <img src="images/d2.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Dota 2</p>
                   <p class="card-text d-none d-lg-block">Dota 2 je strategická hra, kde se dva týmy po pěti hráčích
                     snaží zničit nepřátelskou základnu, využívající unikátní hrdiny a taktické schopnosti.</p>
-                    <p class="text-secondary">Logické</p>
+                  <p class="text-secondary">Logické</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">Free</p>
@@ -568,13 +588,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta6">
                 <img src="images/astrometica-16u80.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Astrometica</p>
                   <p class="card-text d-none d-lg-block">Astrometica je sci-fi hra, která kombinuje prvky vesmírného
                     průzkumu, taktiky a rozvoj postavy v exotických galaxiích.</p>
-                    <p class="text-secondary">Logické</p>
+                  <p class="text-secondary">Logické</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">19,49€</p>
@@ -586,13 +606,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta7">
                 <img src="images/Marvel_Rivals_cover_art.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Marvel Rivals</p>
                   <p class="card-text d-none d-lg-block">Marvel Rivals je týmová střílečka, kde hráči bojují jako
                     superhrdinové z Marvel univerza v dynamických 6v6 soubojích.</p>
-                    <p class="text-secondary">Střílečka</p>
+                  <p class="text-secondary">Střílečka</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">Free</p>
@@ -604,13 +624,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta8">
                 <img src="images/balatro.avif" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Balatro</p>
                   <p class="card-text d-none d-lg-block">Balatro je logická hra, která kombinuje prvky karetní strategie
                     a vysoce taktické hratelnosti v temném fantasy světě.</p>
-                    <p class="text-secondary">Logické</p>
+                  <p class="text-secondary">Logické</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">13,99€</p>
@@ -622,13 +642,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta9">
                 <img src="images/Apex_legends_cover.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Apex Legends™</p>
                   <p class="card-text d-none d-lg-block">Apex Legends™ je battle royale hra, kde týmy hrdinů s
                     unikátními schopnostmi bojují o přežití na nehostinné mapě plné nebezpečí.</p>
-                    <p class="text-secondary">Akční/Střílečka</p>
+                  <p class="text-secondary">Akční/Střílečka</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">Free</p>
@@ -640,13 +660,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta10">
                 <img src="images/fs25.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Farming Simulator 25</p>
                   <p class="card-text d-none d-lg-block">Farming Simulator 25 je simulátor zemědělství, který umožňuje
                     hráčům řídit farmu, pěstovat plodiny a chovat zvířata v realistickém otevřeném světě.</p>
-                    <p class="text-secondary">RPG</p>
+                  <p class="text-secondary">RPG</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">49,99€</p>
@@ -658,14 +678,14 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta11">
                 <img src="images/Helldivers2cover.png" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">HELLDIVERS™ 2</p>
                   <p class="card-text d-none d-lg-block">HELLDIVERS™ 2 je kooperativní akční střílečka, kde hráči bojují
                     proti mimozemským hrozbám ve stylizovaném sci-fi světě, zaměřená na týmovou strategii a intenzivní
                     souboje.</p>
-                    <p class="text-secondary">Akční/Střílečka</p>
+                  <p class="text-secondary">Akční/Střílečka</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">39,99€</p>
@@ -677,7 +697,7 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta12">
                 <img src="images/Phasmophobia.webp" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Phasmophobia</p>
@@ -696,13 +716,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta13">
                 <img src="images/leagueoflegends.webp" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">League of Legends</p>
                   <p class="card-text d-none d-lg-block">League of Legends je populární MOBA hra, kde dva týmy po pěti
                     hráčích soupeří o zničení nepřátelské základny pomocí unikátních hrdinů a týmové strategie.</p>
-                    <p class="text-secondary">Mlátičky</p>
+                  <p class="text-secondary">Mlátičky</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">Free</p>
@@ -714,13 +734,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta14">
                 <img src="images/lostark.webp" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Lost Ark</p>
                   <p class="card-text d-none d-lg-block">Lost Ark je akční MMORPG, které kombinuje epické bitvy,
                     rozsáhlý svět a dobrodružné výpravy v hledání ztracených artefaktů.</p>
-                    <p class="text-secondary">RPG</p>
+                  <p class="text-secondary">RPG</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">Free</p>
@@ -732,13 +752,13 @@
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex my-4">
-              <div class="card mb-4 h-100 w-100" id="karta">
+              <div class="card mb-4 h-100 w-100" id="karta15">
                 <img src="images/fc5.avif" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
                   <p class="card-title fs-3">Far Cry® 5</p>
                   <p class="card-text d-none d-lg-block">Far Cry® 5 je akční střílečka, kde hráči bojují proti
                     fanatickému kultu v otevřeném světě, plném nebezpečí a možností prozkoumávat a ovlivnit příběh.</p>
-                    <p class="text-secondary">Akční/Střílečka</p>
+                  <p class="text-secondary">Akční/Střílečka</p>
                   <div class="row mt-auto">
                     <div class="col-md-3 d-flex align-items-center">
                       <p class="m-0">59,99€</p>
@@ -750,6 +770,8 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </section>
 
 
