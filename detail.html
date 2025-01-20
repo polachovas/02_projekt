@@ -14,63 +14,61 @@
 </head>
 
 <body class="bg-dark text-light">
-        <nav class="navbar navbar-dark navbar-expand-md text-light p-0 sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" width="100" height="50">
-                </a>
-    
-                    <form class="d-flex d-none d-md-flex ms-auto" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Co si dnes zahrajem?"
-                            aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Hledat</button>
-                    </form>
-                    <div class="dropstart">
-                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="images/white-shopping-cart-icon-png-19.jpg" alt="Dropdown Icon" class="img-fluid"
-                                style="max-width: 30px;">
-                        </button>
-                        <ul class="dropdown-menu p-4" style="width: 280px;">
-                            <h3>Váš košík</h3>
-                            <p>Máte 2 produkty v košíku</p>
-                          <hr class="my-2">
-                            <li>
-                              <div class="d-flex align-items-center my-2">
-                                <img src="images/cs2.jpg" width="35" height="60" class="mx-2">
-                                <div>
-                                  <p class="mb-0">Counter-Strike 2</p>
-                                  <p class="mb-0"><span class="text-primary">Free</span></p>
-                                </div>
-                              </div>
-                            </li>
-                            <hr class="my-2">
-                            <li>
-                              <div class="d-flex align-items-center my-2">
-                                <img src="images/Helldivers2cover.png" width="35" height="60" class="mx-2">
-                                <div>
-                                  <p class="mb-0">HELLDIVERS™ 2</p>
-                                  <p class="mb-0"><span class="text-primary">39,99€</span></p>
-                                </div>
-                              </div>
-                            </li>
-                            <hr class="my-2">
-                            <li id="kosik_button" class="mt-4">
-                              <a class="text-light" href="kosik.html">Pokračovat do košíku -></a>
-                            </li>
-                          </ul>
-                    </div>
-                </div>
+    <nav class="navbar navbar-dark navbar-expand-md text-light p-0 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="100" height="50">
+            </a>
+
+            <form class="d-flex d-none d-md-flex ms-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Co si dnes zahrajem?" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Hledat</button>
+            </form>
+            <div class="dropstart">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/white-shopping-cart-icon-png-19.jpg" alt="Dropdown Icon" class="img-fluid"
+                        style="max-width: 30px;">
+                </button>
+                <ul class="dropdown-menu p-4" style="width: 280px;">
+                    <h3>Váš košík</h3>
+                    <p>Máte 2 produkty v košíku</p>
+                    <hr class="my-2">
+                    <li>
+                        <div class="d-flex align-items-center my-2">
+                            <img src="images/cs2.jpg" width="35" height="60" class="mx-2">
+                            <div>
+                                <p class="mb-0">Counter-Strike 2</p>
+                                <p class="mb-0"><span class="text-primary">Free</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <hr class="my-2">
+                    <li>
+                        <div class="d-flex align-items-center my-2">
+                            <img src="images/Helldivers2cover.png" width="35" height="60" class="mx-2">
+                            <div>
+                                <p class="mb-0">HELLDIVERS™ 2</p>
+                                <p class="mb-0"><span class="text-primary">39,99€</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <hr class="my-2">
+                    <li id="kosik_button" class="mt-4">
+                        <a class="text-light" href="kosik.html">Pokračovat do košíku -></a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+        </div>
+    </nav>
 
     <section class="detail">
         <div class="container">
             <div class="row mt-5">
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="images/cs2.jpg" class="h-100">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <img src="images/cs2.jpg" class="h-100 img-fluid">
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h1 class="mt-4">Counter-Strike 2</h1>
                     <p>Už více než dvě dekády nabízí série her Counter-Strike jedinečný kompetitivní zážitek, na jehož
                         evoluci se podílí miliony hráčů z celého světa. A tohle je začátek další kapitoly – tohle je
@@ -88,6 +86,7 @@
                         <li>modernizované vizuální efekty a zvuky,</li>
                         <li>všechny Vaše předměty ze hry CS:GO.</li>
                     </p>
+                    <button type="button" class="btn btn-primary">Přidat do košíku</button>
                 </div>
             </div>
         </div>
@@ -98,34 +97,66 @@
 
                 <div class="col gallery-item d-flex justify-content-center">
                     <a href="images/csg1.jpg" data-fancybox="gallery" data-caption="Obrázek 1">
-                        <img src="images/csg1.jpg" alt="Obrázek 1">
+                        <img src="images/csg1.jpg" class="img-fluid" alt="Obrázek 1">
                     </a>
                 </div>
 
                 <div class="col gallery-item d-flex justify-content-center">
                     <a href="images/csg2.jpg" data-fancybox="gallery" data-caption="Obrázek 2">
-                        <img src="images/csg2.jpg" alt="Obrázek 2">
+                        <img src="images/csg2.jpg" class="img-fluid" alt="Obrázek 2">
                     </a>
                 </div>
 
                 <div class="col gallery-item d-flex justify-content-center">
                     <a href="images/csg3.jpg" data-fancybox="gallery" data-caption="Obrázek 3">
-                        <img src="images/csg3.jpg" alt="Obrázek 3">
+                        <img src="images/csg3.jpg" class="img-fluid" alt="Obrázek 3">
                     </a>
                 </div>
 
                 <div class="col gallery-item d-flex justify-content-center">
                     <a href="images/csg4.jpg" data-fancybox="gallery" data-caption="Obrázek 4">
-                        <img src="images/csg4.jpg" alt="Obrázek 4">
+                        <img src="images/csg4.jpg" class="img-fluid" alt="Obrázek 4">
                     </a>
                 </div>
 
                 <div class="col gallery-item d-flex justify-content-center">
                     <a href="images/csg5.jpg" data-fancybox="gallery" data-caption="Obrázek 6">
-                        <img src="images/csg5.jpg" alt="Obrázek 5">
+                        <img src="images/csg5.jpg" class="img-fluid" alt="Obrázek 5">
                     </a>
                 </div>
             </div>
+    </section>
+
+    <section class="parametry">
+        <div class="container mb-5">
+            <h1>Parametry</h1>
+            <hr>
+            <div>
+                <article>
+                    <h3>Název: Counter-Strike 2</h3>
+                    <li>Žánr: Akční, Free to play</li>
+                    <li>Vývojář: Valve</li>
+                    <li>Vydavatel: Valve</li>
+                    <li>Datum vydání: 21. srp. 2012</li>
+                </article>
+            </div>
+            <hr>
+            <div>
+                <h3>Systémové požadavky</h3>
+                <article>
+                    <p class="m-1">Minimální:</p>
+                    <li>OS: Windows® 10</li>
+                    <li>Procesor: Intel® Core™ i5 750 se 4 hardwarovými vlákny nebo lepší</li>
+                    <li>Paměť: 8 GB RAM</li>
+                    <li>Grafická karta: Paměť 1 GB nebo více a doporučená kompatibilita s DirectX 11 a Pixel Shader 5.0
+                    </li>
+                    <li>DirectX: Verze 11</li>
+                    <li>Pevný disk: 85 GB volného místa</li>
+                </article>
+            </div>
+            <hr>
+        </div>
+
     </section>
 
     <section class="rezence">
@@ -138,10 +169,11 @@
                     <div class="col-md-10">
                         <article>
                             <h2>Pepa Novák</h2>
-                            <p class="m-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet, pariatur nulla
+                            <p class="m-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet,
+                                pariatur nulla
                                 eos esse in ducimus! Earum, dolorum! Hic, laboriosam aut reiciendis rem ea minus
                                 consequatur corrupti eveniet sapiente labore!</p>
-                                <img src="images/4h.png" alt="hvezdicky" height="30">
+                            <img src="images/4h.png" alt="hvezdicky" height="30">
                             <p class="d-flex justify-content-end">10.10.2024</p>
                         </article>
                     </div>
@@ -155,11 +187,12 @@
                     <div class="col-md-10">
                         <article>
                             <h2>Alex Bajer</h2>
-                            <p class="m-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet, pariatur nulla
+                            <p class="m-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet,
+                                pariatur nulla
                                 eos esse in ducimus! Earum, dolorum! Hic, laboriosam aut reiciendis rem ea minus
                                 consequatur corrupti eveniet sapiente labore!</p>
-                                <img src="images/4h.png" alt="hvezdicky" height="30">
-                                <p class="d-flex justify-content-end">9.1.2024</p>
+                            <img src="images/4h.png" alt="hvezdicky" height="30">
+                            <p class="d-flex justify-content-end">9.1.2024</p>
                         </article>
                     </div>
                 </div>
@@ -172,11 +205,12 @@
                     <div class="col-md-10">
                         <article>
                             <h2>Ota Kramer</h2>
-                            <p class="m-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet, pariatur nulla
+                            <p class="m-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet,
+                                pariatur nulla
                                 eos esse in ducimus! Earum, dolorum! Hic, laboriosam aut reiciendis rem ea minus
                                 consequatur corrupti eveniet sapiente labore!</p>
-                                <img src="images/4h.png" alt="hvezdicky" height="30">
-                                <p class="d-flex justify-content-end">26.4.2023</p>
+                            <img src="images/4h.png" alt="hvezdicky" height="30">
+                            <p class="d-flex justify-content-end">26.4.2023</p>
                         </article>
                     </div>
                 </div>
