@@ -102,31 +102,33 @@
 
 
   <section class="kosik">
-    <div class="container" id="kosik_pozadi">
-        <div class="row fw-bold fs-5 pt-5 mt-5">
+    <div class="container">
+      <h2 class="mt-4">Váš košík</h2>
+      <div id="kosik_pozadi">
+        <div class="row fw-bold fs-5 pt-5 mt-2">
           <div class="col-lg-2 empty-div">
-            
+
           </div>
           <div class="col-lg-2">
             <p>Produkt</p>
           </div>
-          <div class="col-lg-1">
+          <div class="col-lg-1 d-flex justify-content-center">
             <p>Cena</p>
           </div>
-          <div class="col-lg-1">
+          <div class="col-lg-1 d-flex justify-content-center">
             <p>Sleva</p>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 d-flex justify-content-center">
             <p>Snížená cena</p>
           </div>
           <div class="col-lg-1">
             <p>Množství</p>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 d-flex justify-content-center">
             <p>Celkem</p>
           </div>
           <div class="col-lg-1 empty-div">
-            
+
           </div>
         </div>
         <div class="item row pb-5">
@@ -137,19 +139,19 @@
             <p>Counter-Strike 2</p>
             <p class="text-secondary">Střílečky</p>
           </div>
-          <div class="col-lg-1 d-flex align-items-center">
+          <div class="col-lg-1 d-flex align-items-center justify-content-center">
             <p>Free</p>
           </div>
-          <div class="col-lg-1 d-flex align-items-center">
+          <div class="col-lg-1 d-flex align-items-center justify-content-center">
             <p>0,00%</p>
           </div>
-          <div class="col-lg-2 d-flex align-items-center">
+          <div class="col-lg-2 d-flex align-items-center justify-content-center">
             <p>Free</p>
           </div>
           <div class="col-lg-1 d-flex align-items-center">
-            <input type="number" placeholder="1" min="1" name="pocet" id="pocitadlo">
+            <input type="number" placeholder="1" min="1" name="pocet" id="pocitadlo1">
           </div>
-          <div class="col-lg-2 d-flex align-items-center">
+          <div class="col-lg-2 d-flex align-items-center justify-content-center">
             <p>Free</p>
           </div>
           <div class="col-lg-1 empty-div d-flex align-items-center">
@@ -167,19 +169,19 @@
             <p>HELLDIVERS™ 2</p>
             <p class="text-secondary">Akční/Střílečka</p>
           </div>
-          <div class="col-lg-1 d-flex align-items-center">
+          <div class="col-lg-1 d-flex align-items-center justify-content-center">
             <p>39,99€</p>
           </div>
-          <div class="col-lg-1 d-flex align-items-center">
+          <div class="col-lg-1 d-flex align-items-center justify-content-center">
             <p>0,00%</p>
           </div>
-          <div class="col-lg-2 d-flex align-items-center">
+          <div class="col-lg-2 d-flex align-items-center justify-content-center">
             <p>39,99€</p>
           </div>
           <div class="col-lg-1 d-flex align-items-center">
-            <input type="number" placeholder="1" min="1" name="pocet" id="pocitadlo">
+            <input type="number" placeholder="1" min="1" name="pocet" id="pocitadlo2">
           </div>
-          <div class="col-lg-2 d-flex align-items-center">
+          <div class="col-lg-2 d-flex align-items-center justify-content-center">
             <p>39,99€</p>
           </div>
           <div class="col-lg-1 empty-div d-flex align-items-center">
@@ -197,19 +199,19 @@
             <p>Phasmophobia</p>
             <p class="text-secondary">Logické</p>
           </div>
-          <div class="col-lg-1 d-flex align-items-center">
+          <div class="col-lg-1 d-flex align-items-center justify-content-center">
             <p>19,50€</p>
           </div>
-          <div class="col-lg-1 d-flex align-items-center">
+          <div class="col-lg-1 d-flex align-items-center justify-content-center">
             <p>0,00%</p>
           </div>
-          <div class="col-lg-2 d-flex align-items-center">
+          <div class="col-lg-2 d-flex align-items-center justify-content-center">
             <p>19,50€</p>
           </div>
           <div class="col-lg-1 d-flex align-items-center">
-            <input type="number" placeholder="1" min="1" name="pocet" id="pocitadlo">
+            <input type="number" placeholder="1" min="1" name="pocet" id="pocitadlo3">
           </div>
-          <div class="col-lg-2 d-flex align-items-center">
+          <div class="col-lg-2 d-flex align-items-center justify-content-center">
             <p>19,50€</p>
           </div>
           <div class="col-lg-1 empty-div d-flex align-items-center">
@@ -218,20 +220,65 @@
             </button>
           </div>
         </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-9">
+          <p class="fw-bold fs-2 d-flex justify-content-end">
+            Celkem
+          </p>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center align-items-center">
+          <p class="fs-3">54,59€</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <div class="container mb-5">
+    <h2 class="my-4">Zadejte slevový kódík</h2>
+    <div class="row">
+      <div class="col-lg-9">
+        <input type="text" name="sleva" id="kodik">
+        <button type="button" class="btn btn-primary btn-lg">Použít</button>
+      </div>
+      <div class="col-lg-3 d-flex align-items-center">
+        <a href="doprava.html" class="btn btn-primary w-100 d-flex align-items-center justify-content-center fw-bold fs-5"><p class="m-0">Pokračovat v objednávce</p></a>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="pt-5">
+    <h3>Projekt 2 - 2.G - 2024</h3>
+    <div class="texty">
+      <article>
+        <h4>Simona Poláchová</h4>
+        <p>polach.si23@zaci.spse.cz</p>
+        <p>SPŠE a VOŠ Pardubice</p>
+      </article>
+      <article class="zdroje">
+        <h4>Zdroje</h4>
+        <a href="https://store.steampowered.com/explore/new/">
+          <p>Steam</p>
+        </a>
+        <a href="">
+          <p>Volne</p>
+        </a>
+      </article>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-    <script>
-      document.querySelectorAll('.remove-btn').forEach(button => {
-    button.addEventListener('click', function() {
-      this.closest('.item').remove();
+  <script>
+    document.querySelectorAll('.remove-btn').forEach(button => {
+      button.addEventListener('click', function () {
+        this.closest('.item').remove();
+      });
     });
-  });
-    </script>
+  </script>
 </body>
 
 </html>

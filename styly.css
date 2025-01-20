@@ -34,6 +34,8 @@ li {
     font-family: "Chakra Petch", serif;
 }
 
+
+
 footer {
     background-color: #1a1a1a;
     padding-top: 0.1%;
@@ -187,9 +189,12 @@ nav {
     height: 4px;
 }
 
-#pocitadlo {
+#pocitadlo1, #pocitadlo2, #pocitadlo3 {
     max-width: 80px;
 }
 
 #kosik_pozadi{background-color: #1a1a1a;
                 padding: 0 2% 0 2% ;}
+
+#kodik{width: 300px;
+        height: 60px;}
