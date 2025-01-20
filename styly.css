@@ -2,28 +2,36 @@
     font-family: "Chakra Petch", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  .audiowide-regular {
+.audiowide-regular {
     font-family: "Audiowide", serif;
     font-weight: 400;
     font-style: normal;
-  }
-
-p{font-family: "Chakra Petch", serif;
 }
 
-label{font-family: "Chakra Petch", serif;
-  }
-
-h1{ font-family: "Audiowide", serif;}
-
-h2{  font-family: "Audiowide", serif;
+p {
+    font-family: "Chakra Petch", serif;
 }
 
-h3{ font-family: "Audiowide", serif;}
+label {
+    font-family: "Chakra Petch", serif;
+}
 
-li{font-family: "Chakra Petch", serif;
+h1 {
+    font-family: "Audiowide", serif;
+}
+
+h2 {
+    font-family: "Audiowide", serif;
+}
+
+h3 {
+    font-family: "Audiowide", serif;
+}
+
+li {
+    font-family: "Chakra Petch", serif;
 }
 
 footer {
@@ -115,9 +123,13 @@ footer h4 {
     font-size: 2.5rem;
 }
 
-.novinky{background-color: #1a1a1a;}
+.novinky {
+    background-color: #1a1a1a;
+}
 
-header{background-color: #1a1a1a;}
+header {
+    background-color: #1a1a1a;
+}
 
 nav {
     background-color: #1a1a1a;
@@ -127,7 +139,7 @@ nav {
     width: 200px;
 }
 
-#karta img {
+.karta img {
     height: 270px;
 }
 
@@ -141,7 +153,7 @@ nav {
     margin-bottom: 15px;
 }
 
-#kosik_button{
+#kosik_button {
     background-color: #1a1a1a;
     height: 60px;
     display: flex;
@@ -149,14 +161,35 @@ nav {
     align-items: center;
 }
 
-#kosik_button a{text-decoration: none;
-                }
+#kosik_button2 {
+    background-color: #1a1a1a;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-                .step-circle {
-                    width: 50px;
-                    height: 50px;
-                    font-size: 1.2em;
-                }
-                .step-line {
-                    height: 4px;
-                }
+#kosik_button a {
+    text-decoration: none;
+}
+
+#kosik_button2 a {
+    text-decoration: none;
+}
+
+.step-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+}
+
+.step-line {
+    height: 4px;
+}
+
+#pocitadlo {
+    max-width: 80px;
+}
+
+#kosik_pozadi{background-color: #1a1a1a;
+                padding: 0 2% 0 2% ;}

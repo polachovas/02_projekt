@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styly.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <title>Nákupní košík</title>
 </head>
 
@@ -100,9 +101,137 @@
   </section>
 
 
+  <section class="kosik">
+    <div class="container" id="kosik_pozadi">
+        <div class="row fw-bold fs-5 pt-5 mt-5">
+          <div class="col-lg-2 empty-div">
+            
+          </div>
+          <div class="col-lg-2">
+            <p>Produkt</p>
+          </div>
+          <div class="col-lg-1">
+            <p>Cena</p>
+          </div>
+          <div class="col-lg-1">
+            <p>Sleva</p>
+          </div>
+          <div class="col-lg-2">
+            <p>Snížená cena</p>
+          </div>
+          <div class="col-lg-1">
+            <p>Množství</p>
+          </div>
+          <div class="col-lg-2">
+            <p>Celkem</p>
+          </div>
+          <div class="col-lg-1 empty-div">
+            
+          </div>
+        </div>
+        <div class="item row pb-5">
+          <div class="col-lg-2 empty-div">
+            <img src="images/cs2.jpg" alt="cs" width="150" height="175">
+          </div>
+          <div class="col-lg-2 d-flex flex-column justify-content-center">
+            <p>Counter-Strike 2</p>
+            <p class="text-secondary">Střílečky</p>
+          </div>
+          <div class="col-lg-1 d-flex align-items-center">
+            <p>Free</p>
+          </div>
+          <div class="col-lg-1 d-flex align-items-center">
+            <p>0,00%</p>
+          </div>
+          <div class="col-lg-2 d-flex align-items-center">
+            <p>Free</p>
+          </div>
+          <div class="col-lg-1 d-flex align-items-center">
+            <input type="number" placeholder="1" min="1" name="pocet" id="pocitadlo">
+          </div>
+          <div class="col-lg-2 d-flex align-items-center">
+            <p>Free</p>
+          </div>
+          <div class="col-lg-1 empty-div d-flex align-items-center">
+            <button class="btn btn-link text-danger remove-btn">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="item row pb-5">
+          <div class="col-lg-2 empty-div">
+            <img src="images/Helldivers2cover.png" alt="cs" width="150" height="175">
+          </div>
+          <div class="col-lg-2 d-flex flex-column justify-content-center">
+            <p>HELLDIVERS™ 2</p>
+            <p class="text-secondary">Akční/Střílečka</p>
+          </div>
+          <div class="col-lg-1 d-flex align-items-center">
+            <p>39,99€</p>
+          </div>
+          <div class="col-lg-1 d-flex align-items-center">
+            <p>0,00%</p>
+          </div>
+          <div class="col-lg-2 d-flex align-items-center">
+            <p>39,99€</p>
+          </div>
+          <div class="col-lg-1 d-flex align-items-center">
+            <input type="number" placeholder="1" min="1" name="pocet" id="pocitadlo">
+          </div>
+          <div class="col-lg-2 d-flex align-items-center">
+            <p>39,99€</p>
+          </div>
+          <div class="col-lg-1 empty-div d-flex align-items-center">
+            <button class="btn btn-link text-danger remove-btn">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="item row pb-5">
+          <div class="col-lg-2 empty-div">
+            <img src="images/Phasmophobia.webp" alt="cs" width="150" height="175">
+          </div>
+          <div class="col-lg-2 d-flex flex-column justify-content-center">
+            <p>Phasmophobia</p>
+            <p class="text-secondary">Logické</p>
+          </div>
+          <div class="col-lg-1 d-flex align-items-center">
+            <p>19,50€</p>
+          </div>
+          <div class="col-lg-1 d-flex align-items-center">
+            <p>0,00%</p>
+          </div>
+          <div class="col-lg-2 d-flex align-items-center">
+            <p>19,50€</p>
+          </div>
+          <div class="col-lg-1 d-flex align-items-center">
+            <input type="number" placeholder="1" min="1" name="pocet" id="pocitadlo">
+          </div>
+          <div class="col-lg-2 d-flex align-items-center">
+            <p>19,50€</p>
+          </div>
+          <div class="col-lg-1 empty-div d-flex align-items-center">
+            <button class="btn btn-link text-danger remove-btn">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+        </div>
+    </div>
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+    <script>
+      document.querySelectorAll('.remove-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      this.closest('.item').remove();
+    });
+  });
+    </script>
 </body>
 
 </html>
